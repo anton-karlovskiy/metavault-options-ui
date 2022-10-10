@@ -1,0 +1,109 @@
+{
+  "name": "metavault-options-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@coinbase/wallet-sdk": "^3.1.0",
+    "@ethersproject/bignumber": "^5.6.1",
+    "@ethersproject/experimental": "^5.6.1",
+    "@ethersproject/providers": "^5.6.7",
+    "@ethersproject/units": "^5.6.0",
+    "@headlessui/react": "^1.6.3",
+    "@heroicons/react": "^1.0.6",
+    "@project-serum/anchor": "^0.24.2",
+    "@reach/tooltip": "^0.17.0",
+    "@solana/wallet-adapter-base": "^0.9.5",
+    "@solana/wallet-adapter-react": "^0.15.4",
+    "@solana/wallet-adapter-react-ui": "^0.9.6",
+    "@solana/wallet-adapter-wallets": "^0.15.5",
+    "@solana/web3.js": "^1.37.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.23",
+    "@types/react": "^18.0.1",
+    "@types/react-dom": "^18.0.0",
+    "@walletconnect/ethereum-provider": "^1.7.8",
+    "@web3-react/coinbase-wallet": "8.0.31-beta.0",
+    "@web3-react/core": "8.0.30-beta.0",
+    "@web3-react/eip1193": "8.0.23-beta.0",
+    "@web3-react/empty": "8.0.17-beta.0",
+    "@web3-react/gnosis-safe": "8.0.3-beta.0",
+    "@web3-react/metamask": "8.0.24-beta.0",
+    "@web3-react/network": "8.0.23-beta.0",
+    "@web3-react/types": "8.0.17-beta.0",
+    "@web3-react/url": "8.0.22-beta.0",
+    "@web3-react/walletconnect": "8.0.31-beta.0",
+    "bs58": "^5.0.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "6",
+    "react-scripts": "5.0.0",
+    "react-table": "^7.6.3",
+    "react-use": "^17.3.2",
+    "typescript": "^4.6.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "type-check": "tsc",
+    "lint": "eslint ./src/**/*.{ts,tsx,js,jsx} --ignore-path .eslintignore .",
+    "lint-fix": "eslint --fix ./src/**/*.{ts,tsx,js,jsx} --ignore-path .eslintignore .",
+    "test-all": "yarn lint && yarn type-check",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/builder-webpack5": "^6.4.22",
+    "@storybook/manager-webpack5": "^6.4.22",
+    "@storybook/node-logger": "^6.4.22",
+    "@storybook/preset-create-react-app": "^4.1.0",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "^0.0.11",
+    "@tailwindcss/forms": "^0.5.2",
+    "autoprefixer": "^10.4.4",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.8",
+    "postcss": "^8.4.12",
+    "react-app-rewired": "^2.2.1",
+    "storybook-dark-mode": "^1.1.0",
+    "tailwindcss": "^3.0.24",
+    "webpack": "^5.72.0"
+  },
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  }
+}
